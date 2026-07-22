@@ -1,0 +1,18 @@
+# Copy this record into catalog/skills.yml when adding a skill.
+- name: example-skill
+  status: trial # active | trial | paused | archived
+  local_version: 0.1.0
+  path: skills/example-skill/SKILL.md
+  source:
+    kind: original # original | forked | copied | inspired-by
+    url: https://github.com/OWNER/REPOSITORY
+    upstream_path: skills/example-skill/SKILL.md
+    upstream_ref: main # exact commit SHA or release tag is preferred
+    license: MIT # verify before importing
+    imported_on: YYYY-MM-DD
+  adaptations: |
+    Explain what changed from the source and why.
+  review:
+    last_reviewed: YYYY-MM-DD
+    next_review: YYYY-MM-DD
+  notes: ''
