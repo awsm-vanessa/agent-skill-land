@@ -25,3 +25,26 @@ skills:
       One-week trial. Security review: no executables, scripts, submodules, or
       credential/network/persistence behavior found in the reviewed revision.
       See reviews/no-ai-slop-review-2026-07-22.md.
+
+  - name: notion-global-task-capture
+    status: active
+    local_version: 0.1.0
+    path: skills/notion-global-task-capture/SKILL.md
+    source:
+      kind: original
+      url: https://github.com/awsm-vanessa/agent-skill-land
+      upstream_path: skills/notion-global-task-capture/SKILL.md
+      upstream_ref: bb4dcf9
+      license: MIT
+      imported_on: 2026-07-22
+    adaptations: |
+      Original workflow for deliberate task capture from Hermes conversations.
+      It matches the observed Tasks (Global) pattern: page bodies hold decision
+      logs, progress, and re-entry notes; the Details property remains compact.
+    review:
+      last_reviewed: 2026-07-22
+      next_review: 2026-08-22
+    notes: |
+      Requires the authenticated Notion MCP connection and a fresh Hermes
+      session after installation. It never creates a task without an explicit
+      user request and never fabricates a chat URL.
