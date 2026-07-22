@@ -34,7 +34,7 @@ skills:
       kind: original
       url: https://github.com/awsm-vanessa/agent-skill-land
       upstream_path: skills/notion-global-task-capture/SKILL.md
-      upstream_ref: bb4dcf9
+      upstream_ref: 824b7761d8b610cbc4d305fbe951737257fb9116
       license: MIT
       imported_on: 2026-07-22
     adaptations: |
