@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [writing, editing, voice, anti-ai-slop]
-    related_skills: [humanizer]
+    related_skills: []
 ---
 
 # No AI slop
