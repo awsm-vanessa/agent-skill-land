@@ -1,3 +1,27 @@
 # Registry for every skill kept in this repository.
 # One entry per skill. Preserve the upstream source/ref even after local revisions.
-skills: []
+skills:
+  - name: no-ai-slop
+    status: trial
+    local_version: 0.1.0
+    path: skills/no-ai-slop/SKILL.md
+    source:
+      kind: copied
+      url: https://github.com/petergyang/no-ai-slop
+      upstream_path: SKILL.md
+      upstream_ref: 61c21c351da4dcb40946a11fead978f2078a2c65
+      license: MIT
+      imported_on: 2026-07-22
+    adaptations: |
+      Rebuilt as a Hermes-friendly, voice-preserving editing skill. Removed the
+      upstream platform display configuration; condensed the pattern catalog;
+      changed absolute word bans into contextual signals; and added safeguards
+      for emotionally personal, culturally specific, technical, and deliberate
+      stylistic writing.
+    review:
+      last_reviewed: 2026-07-22
+      next_review: 2026-07-29
+    notes: |
+      One-week trial. Security review: no executables, scripts, submodules, or
+      credential/network/persistence behavior found in the reviewed revision.
+      See reviews/no-ai-slop-review-2026-07-22.md.
