@@ -1,7 +1,7 @@
 ---
 name: notion-global-task-capture
 description: Use when Vanessa explicitly asks to create, log, or update a task in her Notion Global Tasks database from work completed or paused in a Hermes chat. Preserve decisions, re-entry state, and a conversation reference.
-version: 0.1.0
+version: 0.1.1
 author: awsm-vanessa and Hermes Agent
 license: MIT
 metadata:
@@ -44,10 +44,17 @@ The target is Vanessa’s database titled **Tasks (Global)**. Its established st
 - a title property for the task name;
 - a `Status` property;
 - `Source`, `Agent created`, and `Agent name` properties for agent provenance;
-- a short `Details` property for top-of-mind framing; and
-- the **page body** for work history, decisions, re-entry notes, and progress logs.
+- a short `Details` property for top-of-mind framing;
+- the **page body** for work history, decisions, re-entry notes, and progress logs; and
+- a `Tags • AI` relation for AI-related tags.
 
-Before writing, use Notion MCP to locate the database by title, inspect the data source schema and valid option names, and confirm the record target. Never rely on a stored database ID.
+### Required Maximus tag
+
+Unless Vanessa explicitly opts out for a particular record, add the existing **Maximus** relation to `Tags • AI` on every task created from Hermes work. Resolve the tag by its title from the live related database before writing; do not create a duplicate tag if it is missing.
+
+For an update, read the current `Tags • AI` relations and preserve them while adding Maximus if it is absent. For a new task, set the relation to Maximus alongside any user-requested AI tags.
+
+Before writing, use Notion MCP to locate the database by title, inspect the data source schema and valid option names, resolve the Maximus tag, and confirm the record target. Never rely on a stored database ID.
 
 ## Create workflow
 
