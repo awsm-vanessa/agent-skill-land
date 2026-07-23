@@ -103,7 +103,9 @@ Use concise bullets. Omit empty sections rather than leaving filler.
 
 ## Conversation references
 
-A Notion page may contain a real chat URL only when Hermes exposes one or Vanessa supplies it. If no shareable/deep link exists, record the session title or ID as a retrieval reference and say so plainly. Never put a made-up `hermes://` or local-file URL into Notion.
+Always record the exact, searchable **Hermes session title** in the page body. Retrieve it from the session context or desktop session list before writing; if the conversation is untitled, set a concise descriptive title first and record that same title. This is the primary retrieval reference Vanessa uses in Hermes Desktop.
+
+A Notion page may contain a chat URL only when Hermes exposes a real user-accessible URL or Vanessa supplies one. Until then, include the session title and the local date, state that a shareable link is unavailable, and never put a made-up `hermes://` or local-file URL into Notion.
 
 ## Decision-summary rules
 
